@@ -22,7 +22,7 @@
   <img src="https://i.imgur.com/to3ldAH.png">
   <img src="https://i.imgur.com/XUIxVa1.png"> 
   <img src="https://i.imgur.com/1s3DPdL.png"> 
-  <img src="https://i.imgur.com/tXNl2eZ.png"> 
+  <img src="https://i.imgur.com/UaJzVis.png"> 
   <img src="https://i.imgur.com/avqtjfb.png"> 
   <img src="https://i.imgur.com/OdXWZkd.png"> 
   <img src="https://i.imgur.com/hI3bZ1U.png"> 
