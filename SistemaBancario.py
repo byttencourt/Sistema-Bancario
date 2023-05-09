@@ -12,13 +12,13 @@ def menu():
     print('''
 \33[31m======== MENU =========\33[m
 \33[32m
+    [1] Criar Usuario
+    [2] Criar Conta
+    [3] Listar Contas
     [d] Depositar 
     [s] Sacar 
     [e] Extrato 
     [q] Sair
-    [1] Criar Usuario
-    [2] Criar Conta
-    [3] Listar Contas
     \33[m''')
     return input('Qual opção deseja? ')
 
@@ -108,30 +108,20 @@ while True:
     if op == 'd':
         valor = float(input('Digite o valor do depósito: '))
         saldo = deposito(valor, saldo)
-
     if op == 's':
         valor = float(input('Digite o valor do saque: '))
         saldo = saque(valor, saldo)
-
     if op == 'e':
         extrato(saldo)
-
     if op == '1':
         novousuario(usuarios)
-
     if op == '2':
         numero_conta = len(contas) + 1
         conta = novaconta(agencia, numero_conta, usuarios)
-
         if conta:
             contas.append(conta)
-
     if op == '3':
         listarcontas(contas)
-
     if op == 'q':
         quit()
         break
-
-    else:
-        print('Operação Inválida escolha novamente a operação desejada.')

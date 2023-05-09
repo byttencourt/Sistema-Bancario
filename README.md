@@ -18,16 +18,16 @@
 
 
 # Screenshots
-  <img src="https://i.imgur.com/z27fTkg.png">
-  <img src="https://i.imgur.com/eD8ztcM.png">
-  <img src="https://i.imgur.com/2ItBpgk.png"> 
-  <img src="https://i.imgur.com/y4u28gk.png"> 
+  <img src="https://i.imgur.com/FCvnFoq.png">
+  <img src="https://i.imgur.com/to3ldAH.png">
+  <img src="https://i.imgur.com/XUIxVa1.png"> 
+  <img src="https://i.imgur.com/1s3DPdL.png"> 
   <img src="https://i.imgur.com/tXNl2eZ.png"> 
-  <img src="https://i.imgur.com/QzHv0qG.png"> 
+  <img src="https://i.imgur.com/avqtjfb.png"> 
   <img src="https://i.imgur.com/OdXWZkd.png"> 
-  <img src="https://i.imgur.com/zdtoGAt.png"> 
-  <img src="https://i.imgur.com/TFDzitF.png">
-  <img src="https://i.imgur.com/ang0rmX.png"> 
+  <img src="https://i.imgur.com/hI3bZ1U.png"> 
+  <img src="https://i.imgur.com/mfz357e.png">
+  <img src="https://i.imgur.com/NdEU1nX.png"> 
  
  
 
