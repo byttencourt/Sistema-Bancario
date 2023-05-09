@@ -5,7 +5,7 @@ limite_saques = 3
 limite = 500
 usuarios = []
 contas = []
-agencia = '0011'
+agencia = '0001'
 
 
 def menu():
@@ -17,6 +17,8 @@ def menu():
     [e] Extrato 
     [q] Sair
     [1] Criar Usuario
+    [2] Criar Conta
+    [3] Listar Contas
     \33[m''')
     return input('Qual opção deseja? ')
 
@@ -74,10 +76,31 @@ def novousuario(usuarios):
     usuarios.append({"nome": nome, "data_nascimento": data_nascimento, "cpf": cpf, "endereço": endereco})
     print('\33[30:42mUsuário cadastrado com sucesso!\33[m')
 
+
+def listarcontas(contas):
+    for conta in contas:
+        linha = f'''\
+        agência:\t{conta['agencia']}
+        C/C:\t\t{conta['numero_conta']}
+        Titular:\t{conta['usuario']['nome']}
+        '''
+        print('=' *100)
+        print(linha)
+
 def filtrar_usuario(cpf, usuarios):
     usuarios_filtrados = [usuario for usuario in usuarios if usuario['cpf'] == cpf]
     return usuarios_filtrados[0] if usuarios_filtrados else None
 
+
+def novaconta(agencia, numero_conta, usuarios):
+    cpf = int(input('Digite seu número de CPF (somente números): '))
+    usuario = filtrar_usuario(cpf, usuarios)
+
+    if usuario:
+        print('== CONTA CRIADA COM SUCESSO! ==')
+        return {"agencia": agencia, "numero_conta": numero_conta, "usuario": usuario}
+
+    print('\33[30:41mUsuário não encontrado\33[m')
 
 while True:
     op = menu()
@@ -95,6 +118,16 @@ while True:
 
     if op == '1':
         novousuario(usuarios)
+
+    if op == '2':
+        numero_conta = len(contas) + 1
+        conta = novaconta(agencia, numero_conta, usuarios)
+
+        if conta:
+            contas.append(conta)
+
+    if op == '3':
+        listarcontas(contas)
 
     if op == 'q':
         quit()
